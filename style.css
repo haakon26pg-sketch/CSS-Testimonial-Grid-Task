@@ -32,6 +32,11 @@ body {
     width: 100%
 }
 
+.review {
+    font-weight: 500;
+    opacity: 90%;
+}
+
 /* testimonial card styling */
 
 .testimonial {
