@@ -1,0 +1,76 @@
+/* general page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 30px;
+    background-color: #edf2f8;
+
+    display: grid;
+    place-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* main grid container */
+
+.Testimonial {
+    display: grid;
+
+    grid-template-columns: repeat (4, minmax(0, 1fr));
+
+    grid-template-areas:
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira";
+
+    gap: 24px;
+
+    max-width: 1100px;
+    width: 100%
+}
+
+/* testimonial card styling */
+
+.testimonial {
+    padding: 30px;
+    border-radius: 10px;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 10);
+
+    /* prevents content overflow */
+    min-width: 0;
+}
+
+/* individual testimonial cards */
+
+/* Daniel - purple card */
+.daniel {
+    grid-area: daniel;
+
+    background-color: #7541c8;
+    color: #ffffff;
+}
+
+/* Jonathan - dark gray blue card */
+.jonathan {
+    grid-area: jonathan;
+
+    background-color: #48556a;
+    color: #ffffff;
+}
+
+/* Kira - tall white card */
+.kira {
+    grid-area: kira;
+
+    background-color: #ffffff;
+    color: #48556a;
+}
+
+/* jeanette - small white card */
+.jeanette {
+    grid-area: jeanette;
+}
